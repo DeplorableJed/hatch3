@@ -25,7 +25,6 @@ export type VerticalSpecialty = {
 export type TeamMember = {
   name: string
   role: string
-  image: string
   bio: string
 }
 
@@ -89,6 +88,13 @@ export const hatchContent = {
     'Pre-qualify clients so coverage matches the real exposure, not just the lowest price.',
     'Package policies where possible to reduce gaps and improve service continuity.',
     'Maintain boutique-style relationships while serving businesses with national operations.',
+  ],
+  coverageSnapshotAdditions: [
+    'Automotive Service & Repair',
+    'Body Shops',
+    'Classic Car Remodelers',
+    'Non-Franchise Auto Dealers',
+    'Pest Control Companies',
   ],
   services: [
     {
@@ -183,7 +189,7 @@ export const hatchContent = {
     },
     {
       slug: 'hospitality',
-      title: 'Bar, Tavern, and Restaurant',
+      title: 'Neighborhood Bar, Tavern, and Restaurant',
       audience: 'Independent restaurants, bars, taverns, hospitality groups, and owner-operators.',
       headline: 'Coverage that understands service floors, liquor exposure, and busy nights.',
       summary:
@@ -260,41 +266,34 @@ export const hatchContent = {
   ] as VerticalSpecialty[],
   team: [
     {
-      name: 'Garett Hatch',
-      role: 'Protection Specialist and Agency Principal',
-      image: 'https://hatchinsurance.com/wp-content/uploads/2016/08/garette.jpg',
-      bio: 'Entered the insurance industry in 1993 and launched Hatch Insurance Agency in 1998, helping shape the agency’s boutique, service-led approach to commercial risk.',
-    },
-    {
-      name: 'Janette Reneau',
-      role: 'Protection Specialist',
-      image: 'https://hatchinsurance.com/wp-content/uploads/2016/08/jannete.jpg',
-      bio: 'Joined Hatch in 2012 with 25 years of industry experience and a strong book of business in towing, wrecker, and auto transport coverage.',
-    },
-    {
-      name: 'Lori King',
-      role: 'Personal Insurance Protection Specialist, CISR Elite',
-      image:
-        'https://hatchinsurance.com/wp-content/uploads/2016/08/loriking.jpg',
-      bio: 'Represents the agency’s personal-lines advisory side for households that want stronger understanding of coverage and care.',
-    },
-    {
-      name: 'Emilie McArthur Hatch',
-      role: 'Operations Manager',
-      image: 'https://hatchinsurance.com/wp-content/uploads/2016/08/emilie2.jpg',
-      bio: 'Supports the operational backbone of the firm, helping keep service delivery consistent as the agency balances personal attention with national reach.',
-    },
-    {
-      name: 'Annette Cortez',
-      role: 'Account Manager',
-      image: 'https://hatchinsurance.com/wp-content/uploads/2019/10/Annete.jpg',
-      bio: 'Part of the account-management team that reinforces Hatch’s hands-on, relationship-driven service model.',
+      name: 'Garet Hatch',
+      role: 'President / Producer',
+      bio: 'Leads the agency’s client relationships and sets the tone for Hatch’s high-touch commercial and personal insurance advisory work.',
     },
     {
       name: 'Jessica Lerner',
-      role: 'Protection Specialist Account Manager',
-      image: 'https://hatchinsurance.com/wp-content/uploads/2019/10/jessica.jpg',
-      bio: 'Supports day-to-day client management with the responsiveness and continuity that Hatch emphasizes throughout the current site.',
+      role: 'Commercial Account Manager',
+      bio: 'Helps keep commercial accounts organized, responsive, and closely aligned with the operating realities of Hatch clients.',
+    },
+    {
+      name: 'Taylre Chowning',
+      role: 'Personal Lines Account Manager',
+      bio: 'Supports households and personal-lines clients with the attentive, relationship-driven service style the agency wants the site to reflect.',
+    },
+    {
+      name: 'Janette Reneau',
+      role: 'Producer',
+      bio: 'Brings deep experience to specialty and commercial business with a practical, coverage-first perspective.',
+    },
+    {
+      name: 'Emilie Hatch',
+      role: 'Accounting',
+      bio: 'Supports the financial and back-office side of the agency so service remains consistent and dependable.',
+    },
+    {
+      name: 'Laura Babcock',
+      role: 'Bookkeeper / Controller',
+      bio: 'Oversees bookkeeping and financial controls that support the agency’s day-to-day continuity.',
     },
   ] as TeamMember[],
   testimonials: [

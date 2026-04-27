@@ -269,6 +269,16 @@ function App() {
               </article>
             ))}
           </div>
+
+          <article className="service-additions-card">
+            <p className="section-label">Additional target classes</p>
+            <h3>Broaden the coverage snapshot to reflect more of Hatch’s book.</h3>
+            <ul className="mini-list mini-list--columns">
+              {hatchContent.coverageSnapshotAdditions.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
         </section>
 
         <section className="section section--people" id="team">
@@ -290,10 +300,6 @@ function App() {
           <div className="team-grid">
             {hatchContent.team.map((member) => (
               <article key={member.name} className="team-card team-card--featured">
-                <div className="team-card__image">
-                  <img src={member.image} alt={member.name} />
-                </div>
-
                 <div className="team-card__body">
                   <h3>{member.name}</h3>
                   <p className="team-card__role">{member.role}</p>

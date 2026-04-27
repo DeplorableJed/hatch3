@@ -582,6 +582,17 @@
   gap: 18px;
 }
 
+.service-additions-card {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 16px 30px rgba(17, 29, 46, 0.06);
+}
+
 .service-card {
   overflow: hidden;
   border: 1px solid var(--line);
@@ -614,6 +625,11 @@
   color: var(--ink-soft);
 }
 
+.mini-list--columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+}
+
 .people-heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 360px;
@@ -644,7 +660,6 @@
 }
 
 .team-card {
-  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.86);
@@ -658,7 +673,8 @@
 .team-card__body {
   display: grid;
   gap: 10px;
-  padding: 22px;
+  min-height: 100%;
+  padding: 24px;
 }
 
 .team-card__role {
@@ -734,6 +750,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .mini-list--columns {
+    grid-template-columns: 1fr;
+  }
+
   .hero__visual {
     min-height: 0;
   }
@@ -784,7 +804,8 @@
   .specialty-stage__aside,
   .advantage-grid,
   .service-grid,
-  .team-grid {
+  .team-grid,
+  .mini-list--columns {
     grid-template-columns: 1fr;
   }
 
